@@ -4,8 +4,20 @@ The code for my blog, this readme is mostly for myself for when I inevitably sto
 
 ## Notes
 
-- After cloning this repo also need to run the following line to pull the submodules (themes)
+- After cloning this repo also need to run the following line to pull the submodules (hugo themes)
 
 ```bash
 git submodule update --init --recursive
 ```
+
+- Run the following to makes a new post, make sure the `draft:` tag in the header is set to false if the post is finished
+
+```bash
+hugo new hugo new content/posts/<postname>.md
+```
+
+- `hugo server` to test locally
+
+- Site build happens through a github action, don't need to do hugo build locally before committing and pushing changes.
+
+- Need to remember to change theme in the build action too if I change themes
