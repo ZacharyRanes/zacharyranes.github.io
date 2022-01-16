@@ -26,7 +26,7 @@ params:
         Title: Hello! Welcome to my blog!
         Content: "This blog will be about the projects I work on and my interests of
           computer programing, computer networking, video games, books, and movies."
-
+    ShowReadingTime: false
     socialIcons: # optional
         - name: "github"
           url: "https://github.com/ZacharyRanes"
