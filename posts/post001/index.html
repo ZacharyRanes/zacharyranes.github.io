@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Blog Init | Zach&#39;s Blog</title>
+<meta name="keywords" content="Git, Hugo" />
+<meta name="description" content="Starting a blog, writing down my thoughts">
+<meta name="author" content="Zachary Ranes">
+<link rel="canonical" href="https://zacharyranes.github.io/posts/post001/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css" integrity="sha256-yIlj/i15RiAA/Q&#43;xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://zacharyranes.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://zacharyranes.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://zacharyranes.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://zacharyranes.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://zacharyranes.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.92.0" />
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Blog Init" />
+<meta property="og:description" content="Starting a blog, writing down my thoughts" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zacharyranes.github.io/posts/post001/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-01-16T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2022-01-16T00:00:00&#43;00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Blog Init"/>
+<meta name="twitter:description" content="Starting a blog, writing down my thoughts"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://zacharyranes.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Blog Init",
+      "item": "https://zacharyranes.github.io/posts/post001/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Blog Init",
+  "name": "Blog Init",
+  "description": "Starting a blog, writing down my thoughts",
+  "keywords": [
+    "Git", "Hugo"
+  ],
+  "articleBody": "I will be using a simple crutch of the Why, How, What framing, based on the Simon Sinek book “Start with Why”, to organize this blog post.\nWhy “Practice” is the first word that comes to mind when asking myself why I wanted to start this blog. The basic writing skills I learned in high school and college will atrophy if not used consistently, so some type of semi-formal writing will allow me to keep some level of proficiency. Furthermore, with writing down my thoughts about projects and media, I will be having to summarize what I took away from the experiences, which in turn will allow me to learn more from each experience.\nHow I don’t have much interest or expanse in any kind of web development. I also did not have much of a want to learn HTML, CSS, or Java Script, so I investigated alternative tools to help set up this blog. After some research (and flipping a coin between the last two options that both seem to have all the features I needed), I decided on using HUGO. HUGO is a tool that lets you write blog posts in Markdown and then combine those with one of a large selection of themes to generate the code for a static website.\nWith the tool to generate the website selected, I still needed to host it somewhere. The idea of self-hosting crossed my mind, as I have an extra home lab server that could run a webserver, but the risk of exposing my home network to the internet, even in a small way, did not seem worth it. So, I went with a more familiar option, which was GitHub Pages. GitHub pages is nice because you can simply upload a static website into a repository and GitHub will server it after configuring a few options in that repositories' settings.\nWhat To start I used the HUGO tool to make the blog’s working directory, then I setup a git repository in that directory. I set up the theme I chose as a submodule to that main git repository. If you simply clone a repository into a subdirectory of another repository, it will cause errors, so using a submodule is necessary. As you can see from the footer of this post and other pages on the blog, I am using the PaperMod theme. From this point, there are a few ways I could have tried (and did try) to proceed.\nWhen the HUGO tools build the static site, it places it in a subdirectory called ‘public’. My first attempt at publishing the site was to make the public folder into a git submodule repository and having it point to another repository on GitHub that is setup to server the site. This way had the advantage of allowing the repository with the full HUGO project to remain private while the finished site was public. However, it also had the downsides of being more complex, due to the second git submodule, and then having two repositories to work with. Overall, this method works, but felt clunky to me, so I went with the way I am working on this post.\nThe setup for the project is the same as above, but without setting up a git submodule for the public folder. The difference is added a configuration file to the repository that triggers a GitHub workflow. This configuration is provided on the HUGO website, and it allows for the HUGO build to happen on the GitHub server. The Github workflow also drops the built blog from the HUGO build into a separate branch of the same repository and, with a change to the settings of the repository, that branch becomes the host to the GitHub Pages site.\n",
+  "wordCount" : "625",
+  "inLanguage": "en",
+  "datePublished": "2022-01-16T00:00:00Z",
+  "dateModified": "2022-01-16T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Zachary Ranes"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://zacharyranes.github.io/posts/post001/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Zach's Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://zacharyranes.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://zacharyranes.github.io/" accesskey="h" title="Zach&#39;s Blog (Alt + H)">Zach&#39;s Blog</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://zacharyranes.github.io/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://zacharyranes.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Blog Init
+    </h1>
+    <div class="post-meta"><span title='2022-01-16 00:00:00 +0000 UTC'>January 16, 2022</span>&nbsp;·&nbsp;Zachary Ranes
+
+</div>
+  </header> 
+  <div class="post-content"><p>I will be using a simple crutch of the Why, How, What framing, based on the Simon Sinek book &ldquo;Start with Why&rdquo;, to organize this blog post.</p>
+<h2 id="why">Why<a hidden class="anchor" aria-hidden="true" href="#why">#</a></h2>
+<p>&ldquo;Practice&rdquo; is the first word that comes to mind when asking myself why I wanted to start this blog. The basic writing skills I learned in high school and college will atrophy if not used consistently, so some type of semi-formal writing will allow me to keep some level of proficiency. Furthermore, with writing down my thoughts about projects and media, I will be having to summarize what I took away from the experiences, which in turn will allow me to learn more from each experience.</p>
+<h2 id="how">How<a hidden class="anchor" aria-hidden="true" href="#how">#</a></h2>
+<p>I don&rsquo;t have much interest or expanse in any kind of web development. I also did not have much of a want to learn HTML, CSS, or Java Script, so I investigated alternative tools to help set up this blog. After some research (and flipping a coin between the last two options that both seem to have all the features I needed), I decided on using HUGO. HUGO is a tool that lets you write blog posts in Markdown and then combine those with one of a large selection of themes to generate the code for a static website.</p>
+<p>With the tool to generate the website selected, I still needed to host it somewhere. The idea of self-hosting crossed my mind, as I have an extra home lab server that could run a webserver, but the risk of exposing my home network to the internet, even in a small way, did not seem worth it. So, I went with a more familiar option, which was GitHub Pages. GitHub pages is nice because you can simply upload a static website into a repository and GitHub will server it after configuring a few options in that repositories' settings.</p>
+<h2 id="what">What<a hidden class="anchor" aria-hidden="true" href="#what">#</a></h2>
+<p>To start I used the HUGO tool to make the blog&rsquo;s working directory, then I setup a git repository in that directory. I set up the theme I chose as a submodule to that main git repository. If you simply clone a repository into a subdirectory of another repository, it will cause errors, so using a submodule is necessary. As you can see from the footer of this post and other pages on the blog, I am using the PaperMod theme. From this point, there are a few ways I could have tried (and did try) to proceed.</p>
+<p>When the HUGO tools build the static site, it places it in a subdirectory called &lsquo;public&rsquo;. My first attempt at publishing the site was to make the public folder into a git submodule repository and having it point to another repository on GitHub that is setup to server the site. This way had the advantage of allowing the repository with the full HUGO project to remain private while the finished site was public. However, it also had the downsides of being more complex, due to the second git submodule, and then having two repositories to work with. Overall, this method works, but felt clunky to me, so I went with the way I am working on this post.</p>
+<p>The setup for the project is the same as above, but without setting up a git submodule for the public folder. The difference is added a configuration file to the repository that triggers a GitHub workflow. This configuration is provided on the HUGO website, and it allows for the HUGO build to happen on the GitHub server. The Github workflow also drops the built blog from the HUGO build into a separate branch of the same repository and, with a change to the settings of the repository, that branch becomes the host to the GitHub Pages site.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://zacharyranes.github.io/tags/git/">Git</a></li>
+      <li><a href="https://zacharyranes.github.io/tags/hugo/">Hugo</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://zacharyranes.github.io/">Zach&#39;s Blog</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
