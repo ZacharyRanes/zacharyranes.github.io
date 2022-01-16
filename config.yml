@@ -2,3 +2,37 @@ baseURL: 'https://zacharyranes.github.io/'
 languageCode: 'en-us'
 title: "Zach's Blog"
 theme: "PaperMod"
+
+languages:
+    en:
+        languageName: "English"
+        weight: 1
+        menu:
+            main:
+                - name: Archive
+                  url: archives
+                  weight: 5
+                # Don't need search yet but maybe one day
+                # - name: Search
+                #   url: search/
+                #   weight: 10
+                - name: Tags
+                  url: tags/
+                  weight: 10
+
+params:
+    homeInfoParams:
+        Title: Hello! Welcome to my blog!
+        Content: "This blog will be about the projects I work on and my interests of
+          computer programing, computer networking, video games, books, and movies."
+
+    socialIcons: # optional
+        - name: "github"
+          url: "https://github.com/ZacharyRanes"
+        - name: "gitlab"
+          url: "https://gitlab.com/ZacharyRanes"
+        - name: "linkedin"
+          url: "https://www.linkedin.com/in/zachary-ranes/"
+        # TODO: find a way to get an icon for letterboxd
+        # - name: "letterboxd"
+        #   url: "https://letterboxd.com/ZacRain/"

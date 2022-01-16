@@ -10,10 +10,10 @@ The code for my blog, this readme is mostly for myself for when I inevitably sto
 git submodule update --init --recursive
 ```
 
-- Run the following to makes a new post, make sure the `draft:` tag in the header is set to false if the post is finished
+- Run the following to makes a new post, change the post's `title:` in the header, make sure the `draft:` tag in the header is set to false if the post is finished
 
 ```bash
-hugo new hugo new content/posts/<postname>.md
+hugo new content/posts/post???.md
 ```
 
 - `hugo server` to test locally
