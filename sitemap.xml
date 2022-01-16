@@ -2,17 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://zacharyranes.github.io/posts/post001/</loc>
-    <lastmod>2022-01-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zacharyranes.github.io/posts/</loc>
-    <lastmod>2022-01-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zacharyranes.github.io/</loc>
-    <lastmod>2022-01-15T00:00:00+00:00</lastmod>
+    <loc>https://zacharyranes.github.io/archives/</loc>
   </url><url>
     <loc>https://zacharyranes.github.io/categories/</loc>
   </url><url>
+    <loc>https://zacharyranes.github.io/search/</loc>
+  </url><url>
     <loc>https://zacharyranes.github.io/tags/</loc>
+  </url><url>
+    <loc>https://zacharyranes.github.io/</loc>
   </url>
 </urlset>

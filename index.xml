@@ -5,16 +5,8 @@
     <link>https://zacharyranes.github.io/</link>
     <description>Recent content on Zach&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 15 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://zacharyranes.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Blog Init</title>
-      <link>https://zacharyranes.github.io/posts/post001/</link>
-      <pubDate>Sat, 15 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://zacharyranes.github.io/posts/post001/</guid>
-      <description></description>
-    </item>
+    <language>en-us</language><atom:link href="https://zacharyranes.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
     
   </channel>
 </rss>
