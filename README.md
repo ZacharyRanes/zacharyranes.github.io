@@ -16,7 +16,11 @@ git submodule update --init --recursive
 hugo new content/posts/post???.md
 ```
 
-- `hugo server` to test locally
+- To test website locally run the following
+
+```bash
+hugo server
+```
 
 - Site build happens through a github action, don't need to do hugo build locally before committing and pushing changes.
 
