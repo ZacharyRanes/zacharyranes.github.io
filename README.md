@@ -13,15 +13,20 @@ git submodule update --init --recursive
 - Run the following to makes a new post, change the post's `title:` in the header, make sure the `draft:` tag in the header is set to false if the post is finished
 
 ```bash
-hugo new content/posts/post???.md
+hugo new content/posts/postNumber.md
 ```
 
-- To test website locally run the following
+- To test website locally run the following `-D` to show posts marked draft too
 
 ```bash
-hugo server
+hugo server -D
 ```
 
 - Site build happens through a github action, don't need to do hugo build locally before committing and pushing changes.
 
 - Need to remember to change theme in the build action too if I change themes
+
+- Tags used so fare
+  - `Git`
+  - `Hugo`
+  - `Homelab`

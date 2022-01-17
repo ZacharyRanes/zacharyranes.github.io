@@ -3,37 +3,42 @@ languageCode: 'en-us'
 title: "Zach's Blog"
 theme: "PaperMod"
 
-languages:
-    en:
-        languageName: "English"
-        weight: 1
-        menu:
-            main:
-                - name: Archive
-                  url: archives
-                  weight: 5
-                # Don't need search yet but maybe one day
-                # TODO: implement search https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-features/#search-page
-                # - name: Search
-                #   url: search/
-                #   weight: 10
-                - name: Tags
-                  url: tags/
-                  weight: 10
+menu:
+  main:
+    - name: Archive
+      url: archives
+      weight: 5
+    - name: Tags
+      url: tags/
+      weight: 10
+    # TODO: implement search https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-features/#search-page
+    # - name: Search
+    #   url: search/
+    #   weight: 10
+
 
 params:
-    homeInfoParams:
-        Title: Hello! Welcome to my blog!
-        Content: "This blog will be about the projects I work on and my interests of
-          computer programing, computer networking, video games, books, and movies."
-    ShowReadingTime: false
-    socialIcons: # optional
-        - name: "github"
-          url: "https://github.com/ZacharyRanes"
-        - name: "gitlab"
-          url: "https://gitlab.com/ZacharyRanes"
-        - name: "linkedin"
-          url: "https://www.linkedin.com/in/zachary-ranes/"
-        # TODO: find a way to get an icon for letterboxd
-        # - name: "letterboxd"
-        #   url: "https://letterboxd.com/ZacRain/"
+  homeInfoParams:
+    Title: Hello! Welcome to my blog!
+    Content: "This blog will be about the projects I work on and my interests of
+      computer programing, computer networking, video games, books, and movies."
+  editPost:
+    URL: "https://github.com/ZacharyRanes/zacharyranes.github.io/blob/main/content"
+    Text: "Suggest Edit"
+    appendFilePath: true
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/ZacharyRanes"
+    - name: "gitlab"
+      url: "https://gitlab.com/ZacharyRanes"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/zachary-ranes/"
+    # TODO: find a way to get an icon for letterboxd
+    # - name: "letterboxd"
+    #   url: "https://letterboxd.com/ZacRain/"
+  ShowReadingTime: false
+  ShowShareButtons: false
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: true
+  disableSpecial1stPost: false
+  disableScrollToTop: true

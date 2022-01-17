@@ -1,9 +1,18 @@
 ---
-title: "Test2"
-date: 2022-01-13
-tags: [""]
-summary: "test test test"
+title: "Python Parseltongue"
+date: 2021-12-10
+author: "Zachary Ranes"
+tags: ["Python"]
+summary: "Hello Monty"
+hideSummary: false
 draft: true
 ---
 
-test 2
+```python
+def main():
+    """Doc String"""
+    print("Hello World!")
+
+if __name__ == "__main__":
+    main()
+```

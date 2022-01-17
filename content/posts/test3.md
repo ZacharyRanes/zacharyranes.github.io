@@ -1,9 +1,17 @@
 ---
-title: "Test3"
-date: 2022-01-14
-tags: [""]
+title: "Fork Tongued"
+date: 2022-01-10
+author: "Zachary Ranes"
+tags: ["Git","Python"]
 summary: "test test test"
+hideSummary: false
 draft: true
 ---
 
-test 3
+## Test 3
+
+Test Test Test
+
+Test Test Test
+
+Test Test Test
