@@ -4,7 +4,7 @@ date: 2022-01-10
 author: "Zachary Ranes"
 tags: ["Git","Python"]
 summary: "test test test"
-hideSummary: false
+hideSummary: true
 draft: true
 ---
 

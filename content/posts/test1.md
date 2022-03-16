@@ -4,7 +4,7 @@ date: 2021-11-10
 author: "Zachary Ranes"
 tags: ["Git"]
 summary: "Git is Good"
-hideSummary: false
+hideSummary: true
 draft: true
 ---
 

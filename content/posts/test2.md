@@ -4,7 +4,7 @@ date: 2021-12-10
 author: "Zachary Ranes"
 tags: ["Python"]
 summary: "Hello Monty"
-hideSummary: false
+hideSummary: true
 draft: true
 ---
 

@@ -29,4 +29,5 @@ hugo server -D
 - Tags used so fare
   - `Git`
   - `Hugo`
-  - `Homelab`
+  - `VS Code`
+  - `Docker`
