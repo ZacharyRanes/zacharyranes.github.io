@@ -25,9 +25,3 @@ hugo server -D
 - Site build happens through a github action, don't need to do hugo build locally before committing and pushing changes.
 
 - Need to remember to change theme in the build action too if I change themes
-
-- Tags used so fare
-  - `Git`
-  - `Hugo`
-  - `VS Code`
-  - `Docker`
